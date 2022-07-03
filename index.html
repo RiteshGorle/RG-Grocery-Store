@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Gorle Grocery Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+
+<!----------------------------------------------------------
+   __  __       _            _       _   _
+  |  \/  |     | |          (_)     | | (_)                -
+  | \  / | __ _| |_ ___ _ __ _  __ _| |  _ _______
+  | |\/| |/ _` | __/ _ \ '__| |/ _` | | | |_  / _ \        -
+  | |  | | (_| | ||  __/ |  | | (_| | | | |/ /  __/
+  \_|  |_/\__,_|\__\___|_|  |_|\__,_|_| |_/___\___|        -
+                                                                                
+----------------------------------------------------------->
+
+
+<!--------------------------------------------------->
+<!--------------------- FAVICON IMAGE --------------->
+<!--------------------------------------------------->
+<link rel="icon" type="image/x-icon" href="logo1.png">
+
+
+<!--------------------------------------------------->
+<!---------- Compiled and minified CSS -------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+<!--------------------------------------------------->
+<!------- Compiled and minified JavaScript ---------->
+<!--------------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<!--------------------------------------------------->
+<!------ Import jQuery before materialize.js -------->
+<!--------------------------------------------------->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+
+<!--------------------------------------------------->
+<!--------------- Font Awesome style ---------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--------------------------------------------------->
+<!--------------- Font Awesome Kit ------------------>
+<!--------------------------------------------------->
+<script src="https://kit.fontawesome.com/92c23805dd.js" crossorigin="anonymous"></script>
+
+
+<!--------------------------------------------------->
+<!-------------------- CSS -------------------------->
+<!--------------------------------------------------->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+
+<body>
+
+  <!------------------------ SECTION 01: PRELOADER START ------------------------------------------>
+
+    <div id="preloader"> <!-------- PRELOADER ID START ------->
+
+      <div id="container" class="container-preloader"> <!-------- PRELOADER CONTAINER START ------->
+
+        <div class="animation-preloader"> <!-------- PRELOADER ANIMATION START ------->
+         
+          <div class="txt-loading"> <!-------- PRELOADER TEXT START ------->
+
+            <span preloader-text="G" class="characters">G</span>
+            
+            <span preloader-text="O" class="characters">O</span>
+            
+            <span preloader-text="R" class="characters">R</span>
+            
+            <span preloader-text="L" class="characters">L</span>
+            
+            <span preloader-text="E" class="characters">E</span>
+            
+           
+            <div class="preloader"> <!-------- PRELOADER IMAGE START ------->
+                <img src="spin.gif" border="0">
+            </div><!-------- PRELOADER IMAGE END ------->
+
+
+          </div><!-------- PRELOADER TEXT END ------->
+        </div> <!-------- PRELOADER ANIMATION END ------->
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+      </div><!-------- PRELOADER CONTAINER END ------->
+    </div><!-------- PRELOADER ID END ------->
+
+<!------------------------ SECTION 01: PRELOADER END ------------------------------------------>
+
+
+
+<!---------------------------------------------------------------------------->
+<!------------------------ SECTION 01 NAVIGATION BAR  ------------------------>
+<!---------------------------------------------------------------------------->
+
+<header><!------------------------ SECTION 01 HEADER START  ------------------------>
+
+  <div class="navbar-fixed"> <!---------- SECTION 01 FIXED NAVBAR START  -------------->
+  
+    <nav class="green accent-2 lighten-1" role="navigation"> <!---- SECTION 01 NAV START------->
+
+      <div class="nav-wrapper container"> <!---- SECTION 01 CONTAINER START------->
+       
+       <!---------- SECTION 01 LOGO  -------------->
+      <a id="logo-container" href="index.html" class="brand-logo"><img src="logo1.png" width="60px" alt=""></a>
+        
+        <!------ SECTION 01 MOBILE SIDENAV ICON  ---->
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger "><i class="fa fa-cog fa-spin" style="font-size:24px"></i> </a>
+    
+
+        <!------ SECTION 01 DESKTOP NAVIGATION START  ---->
+      <ul class="right hide-on-med-and-down">
+        <li ><a class="navi" href="index.html">HOME </a></li>
+        <li ><a class="navi" href="grocery.html">GROCERY</a></li>
+
+         <!-- Dropdown Trigger -->
+      <li><a class="navi dropdown-trigger"  href="#" data-target="dropdown1">PRODUCTS<i class="material-icons right">arrow_drop_down</i></a></li>
+
+
+        <li><a href="about.html" class="navi">ABOUT</a></li>
+        <li><a href="contact.html" class="navi">CONTACT</a></li>
+      
+      </ul>
+
+      <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a class="navi" href="product.html">Frozen Food</a></li>
+  <li><a class="navi" href="product.html">Sea Food</a></li>
+  <li><a class="navi" href="product.html">Fruits</a></li>
+  <li><a class="navi" href="product.html">Meat</a></li>
+  <li><a class="navi" href="product.html">Drinks</a></li>
+</ul>
+
+<!------ SECTION 01 DESKTOP NAVIGATION END  ---->
+
+    </div><!---- SECTION 01 CONTAINER END ------->
+  </nav><!---- SECTION 01 NAV END  ------->
+</div><!----- SECTION 01 FIXED NAVBAR END ----->
+
+
+
+<!------ SECTION 01 MOBILE NAVIGATION START  ---->
+      <ul id="nav-mobile" class="sidenav">
+        <li><a id="id-mob" href="index.html" >HOME</a></li>
+        <li class="divider"></li>
+        <li><a id="id-mob"href="grocery.html" >GROCERY</a></li>
+        <li class="divider"></li>
+        <li><a id="id-mob" href="product.html" >PRODUCTS</a></li>
+        <li class="divider"></li>
+        <li><a id="id-mob" href="about.html" >ABOUT</a></li>
+        <li class="divider"></li>
+        <li><a id="id-mob" href="contact.html" >CONTACT</a></li>
+        <li class="divider"></li>
+      </ul>
+<!------ SECTION 01 MOBILE NAVIGATION START  ---->
+
+</header><!------------------------ SECTION 01 HEADER END  ------------------------>
+  
+
+<!---------------------------------------------------------------------------->
+<!-------------------- SECTION 02 HEADING SECTION ---------------------------->
+<!---------------------------------------------------------------------------->
+
+  <div class="section no-pad-bot" id="index-banner"> <!------ SECTION 02 BANNER START --------->
+
+    <div class="container"> <!------ SECTION 02 CONTAINER START --------->
+      <br><br>
+
+      <!------ SECTION 02 HEADING --------->
+      <h1 class="header center hoverable"><strong>Gorle Grocery Store</strong></h1>
+
+      <!------ SECTION 02 TAGLINE START --------->
+      <div class="row center">
+      <h6 class="header col s12 light white-text"><strong>We're here to serve only the best products for you.</strong></h6>
+      </div>
+      <!------ SECTION 02 TAGLINE END --------->
+
+      <!------ SECTION 02 SHOP NOW BUTTON START --------->
+      <div class="row center">
+        <a href="grocery.html" id="download-button" class="btn-large  "><strong>Shop now</strong> <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+      </div>
+       <!------ SECTION 02 SHOP NOW BUTTON END --------->
+      <br><br>
+
+    </div><!------ SECTION 02 CONTAINER END --------->
+  </div> <!------ SECTION 02 BANNER END --------->
+
+
+<!---------------------------------------------------------------------------->
+<!------------------- SECTION 03 TOOLTIPPED ---------------------------------->
+<!---------------------------------------------------------------------------->
+
+<div class="center-align"> <!------ SECTION 03 DIVISION START --------->
+  
+   <div class="row"> <!------ SECTION 03 ROW START --------->
+
+    <div class="col s12 m6 l3"> <!------ SECTION 03 COLUMN 01 START --------->
+     <p>
+    <a href="grocery.html" class="btn tooltipped red " data-position="bottom" data-tooltip="Wheat flour, Ragi flour, Semolina, Millet flour"><strong>Grocery</strong></a>
+    </p>
+   </div><!------ SECTION 03 COLUMN 01 END --------->
+
+
+    <div class="col s12 m6 l3"><!------ SECTION 03 COLUMN 02 START --------->
+      <p>
+     <a href="product.html" class="btn tooltipped red" data-position="bottom" data-tooltip="Bread, Rolls, Cookies, Pies, Pastries and Muffins" ><strong>Bakery</strong></a>
+    </p>
+    </div><!------ SECTION 03 COLUMN 02 END --------->
+
+
+    <div class="col s12 m6 l3"> <!------ SECTION 03 COLUMN 03 START --------->
+      <p>
+    <a href="grocery.html" class="btn tooltipped red" data-position="bottom" data-tooltip="Popcorn, Tortilla Chips, Fruit Snacks, Mixed nuts" ><strong>Snacks</strong></a>
+    </p>
+    </div><!------ SECTION 03 COLUMN 03 END --------->
+
+
+
+    <div class="col s12 m6 l3"><!------ SECTION 03 COLUMN 04 START --------->
+      <p>
+   <a href="product.html" class="btn tooltipped red" data-position="bottom" data-tooltip="Albacore Tuna, Oysters, Salmon"><strong>Seafood</strong></a>
+      </p>
+    </div><!------ SECTION 03 COLUMN 04 END --------->
+
+  </div><!------ SECTION 03 ROW END --------->
+  </div><!------ SECTION 03 DIVISION END ---->
+
+
+<!---------------------------------------------------------------------------->
+<!----------------------- SECTION 04 CAROUSEL -------------------------------->
+<!---------------------------------------------------------------------------->
+
+
+<div class="carousel"> <!------ SECTION 04 CAROUSEL START --------->
+
+    <a class="carousel-item" href="grocery.html"><img src="milk.png"></a>
+    <a class="carousel-item" href="grocery.html"><img src="butter.png"></a>
+    <a class="carousel-item" href="grocery.html"><img src="cheese.png"></a>
+    <a class="carousel-item" href="grocery.html"><img src="icecream.png"></a>
+    <a class="carousel-item" href="grocery.html"><img src="yogurt.png"></a>
+
+    <div align="center" class="container hoverable white-text"><!--- SECTION 04 HEADING START --->
+        <h3><strong>Dairy Products</strong></h3>
+    </div><!------ SECTION 04 HEADING END --------->
+
+  </div><!------ SECTION 04 CAROUSEL END --------->
+
+
+
+<!---------------------------------------------------------------------------->
+<!------------------- SECTION 05 FOOD SECTION 01 ----------------------------->
+<!---------------------------------------------------------------------------->
+
+<div class="container"><!------ SECTION 05 CONTAINER START --------->
+
+  <div align="center" class="container hoverable white-text"><!--- SECTION 05 HEADING START --->
+        <h3><strong>Wares & Greens</strong></h3>
+    </div><!------ SECTION 05 HEADING END --------->
+        
+<ul class="collapsible"><!------ SECTION 05 COLLAPSIBLE LIST START --------->
+    
+     <!------ SECTION 05 LIST 1 START --------->
+    <li>
+      <div class="collapsible-header"><img src="fruits.png" width="100px" alt=""> <h4><strong>Fruits</strong> <i class='fas fa-caret-down' style='font-size:40px;'></i></h4></div>
+      <div class="collapsible-body red">
+        <span>
+      <ul class="collection with-header">
+        <li class="collection-header"><h4 class="collection-head">Fruits Available</h4></li>
+        <a href="grocery.html" title=""><li class="collection-item">Apples</li></a>
+        <a href="grocery.html" title=""><li class="collection-item">Bananas</li></a>
+        <a href="grocery.html" title=""><li class="collection-item">Grapes</li></a>
+        <a href="grocery.html" title=""><li class="collection-item">Melon</li></a>
+      </ul>
+        </span></div>
+    </li>
+    <!------ SECTION 05 LIST 1 END --------->
+
+    <!------ SECTION 05 LIST 2 START --------->
+    <li>
+      <div class="collapsible-header"><img src="vegetable.png" width="100px"> <h4><strong>Vegetable</strong> <i class='fas fa-caret-down' style='font-size:40px;'></i></h4></div>
+      <div class="collapsible-body red">
+        <span>
+      <ul class="collection with-header">
+        <li class="collection-header"><h4 class="collection-head">Vegetable Available </h4></li>
+        <a href="product.html" title=""><li class="collection-item">Potatoes</li></a>
+        <a href="product.html" title=""><li class="collection-item">Tomatoes</li></a>
+        <a href="product.html" title=""><li class="collection-item">Onions</li></a>
+        <a href="product.html" title=""><li class="collection-item">Carrots</li></a>
+      </ul>
+        </span></div>
+    </li>
+    <!------ SECTION 05 LIST 2 END --------->
+
+  </ul><!------ SECTION 05 COLLAPSIBLE LIST END --------->
+
+</div><!------ SECTION 05 CONTAINER END --------->
+
+
+<!---------------------------------------------------------------------------->
+<!------------------- SECTION 06 FOOD SECTION 02 ----------------------------->
+<!---------------------------------------------------------------------------->
+
+<div class="container"><!------ SECTION 06 CONTAINER START --------->
+
+  <div align="center" class="container hoverable white-text"><!--- SECTION 06 HEADING START --->
+        <h3><strong>Flesh & Brew</strong></h3>
+    </div><!------ SECTION 07 HEADING END --------->
+        
+<ul class="collapsible"><!------ SECTION 06 COLLAPSIBLE LIST START --------->
+    
+     
+    <!------ SECTION 06 LIST 1 START --------->
+    <li>
+      <div class="collapsible-header"><img src="meat.png" width="100px"> <h4><strong>Meat</strong> <i class='fas fa-caret-down' style='font-size:40px;'></i></h4></div>
+      <div class="collapsible-body red">
+        <span>
+      <ul class="collection with-header">
+        <li class="collection-header"><h4 class="collection-head">Meat Products</h4></li>
+       <a href="grocery.html" title=""> <li class="collection-item">Chicken</li></a>
+       <a href="grocery.html" title=""> <li class="collection-item">Beef</li></a>
+       <a href="grocery.html" title=""><li class="collection-item">fish</li></a>
+       <a href="grocery.html" title=""><li class="collection-item">Seafood</li></a>
+      </ul>
+        </span></div>
+    </li>
+    <!------ SECTION 06 LIST 1 END --------->
+
+    <!------ SECTION 06 LIST 2 START --------->
+    <li>
+      <div class="collapsible-header "><img src="drinks.jpg" width="100px"> <h4><strong>Drinks</strong> <i class='fas fa-caret-down' style='font-size:40px;'></i></h4></div>
+      <div class="collapsible-body red">
+        <span>
+          <ul class="collection with-header">
+        <li class="collection-header"><h4 class="collection-head">Drinks Available</h4></li>
+        <a href="product.html" title=""><li class="collection-item">Mineral Water</li></a>
+        <a href="product.html" title=""><li class="collection-item">Milk</li></a>
+        <a href="product.html" title=""><li class="collection-item">Soft Drinks</li></a>
+        <a href="product.html" title=""><li class="collection-item">Juice & Beer</li></a>
+      </ul>
+        </span></div>
+    </li>
+    <!------ SECTION 05 LIST 2 END --------->
+  
+  </ul><!------ SECTION 06 COLLAPSIBLE LIST END --------->
+
+</div><!------ SECTION 06 CONTAINER END --------->
+
+
+
+<!---------------------------------------------------------------------------->
+<!------------------- SECTION 07 FOOD SECTION 03 ----------------------------->
+<!---------------------------------------------------------------------------->
+
+<div class="container"><!------ SECTION 07 CONTAINER START --------->
+
+  <div align="center" class="container hoverable white-text"><!--- SECTION 07 HEADING START --->
+        <h3><strong>Dairy Products</strong></h3>
+    </div><!------ SECTION 07 HEADING END --------->
+
+
+         
+         <!------ SECTION 07 COLUMN 1 START --------->
+      <div class="my col s12 m2" align="center" >
+      <a href="grocery.html" title=""><p class="z-depth-1" align="center"> 
+        <img src="dry-fruits.jpg" width="150px" height="130px" alt="">
+        <span style="font-size:24px; color:black; font-weight: 600;">DRIED FRUIT</span></p></a>
+      </div>
+         <!------ SECTION 07 COLUMN 1 END --------->
+
+        <!------ SECTION 07 COLUMN 2 START --------->
+     <div class="my col s12 m2" align="center">
+      <a href="grocery.html" title=""><p class="z-depth-2" align="center">
+        <img src="Vegetables.jpg" width="150px" height="130px" alt="">
+        <span style="font-size:24px; color:black; font-weight: 600;">VEGETABLES</span></p></a>
+     </div>
+        <!------ SECTION 07 COLUMN 2 END --------->
+
+       <!------ SECTION 07 COLUMN 3 START --------->
+    <div class="my col s12 m2" align="center">
+      <a href="grocery.html" title=""><p class="z-depth-3" align="center">
+        <img src="oils.jpg" width="150px" height="130px" alt="">
+        <span style="font-size:24px; color:black; font-weight: 600;">COOKING OIL</span></p></a>
+    </div>
+       <!------ SECTION 07 COLUMN 3 END --------->
+       
+       <!------ SECTION 07 COLUMN 4 START --------->
+    <div class="my col s12 m2 " align="center">
+      <a href="grocery.html" title=""><p class="z-depth-4 " align="center">
+        <img src="herbs.jpg" width="150px" height="130px"  alt="">
+        <span style="font-size:24px; color:black; font-weight: 600;">HERBS & SPICES</span></p></a>
+    </div>
+       <!------ SECTION 07 COLUMN 4 END --------->
+       
+      <!------ SECTION 07 COLUMN 5 START --------->
+    <div class="my col s12 m2" align="center">
+      <a href="grocery.html" title=""><p class="z-depth-5" align="center">
+        <img src="preserve.jpg" width="170px" height="130px" alt="">
+        <span style="font-size:24px; color:black; font-weight: 600;">PRESERVES</span></p></a>
+    </div>
+       <!------ SECTION 07 COLUMN 5 END --------->
+
+ </div><!------ SECTION 07 CONTAINER END --------->
+
+
+<!---------------------------------------------------------------------------->
+<!----------------- SECTION 08 ICON AND INFO SECTION ------------------------->
+<!---------------------------------------------------------------------------->
+
+  <div class="container-fluid"> <!------ SECTION 08 CONTAINER START --------->
+
+    <div class="section"><!------ SECTION 08 SECTION START --------->
+
+      <div class="row"> <!------ SECTION 08 ICON AND INFO ROW START --------->
+
+        <!------ SECTION 08 ICON AND INFO COLUMN 1 START --------->
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="fa fa-check-circle" style="font-size:48px;color:yellow"></i></h2>
+            <h5 class="center white-text">Quality Products</h5>
+
+            <p class="light white-text">आमच्याकडे उत्पादनांची गुणवत्ता आहे जी ग्राहकांच्या गरजा पूर्ण करते, त्याचा उद्देश पूर्ण करते आणि उद्योग मानके पूर्ण करते. तसेच, आमचा फोकस अपवादात्मक ग्राहक सेवेवर आहे, उत्पादनाच्या गुणवत्तेचे मूल्यमापन करताना, उत्पादन समस्या सोडवते, कार्यक्षमतेने कार्य करते किंवा ग्राहकांच्या हेतूंना अनुकूल करते यासह <br> आम्ही अनेक प्रमुख घटकांचा विचार करतो.</p>
+          </div>
+        </div>
+        <!------ SECTION 08 ICON AND INFO COLUMN 1 END --------->
+
+        <!------ SECTION 08 ICON AND INFO COLUMN 2 START --------->
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="fa fa-handshake-o" style="font-size:48px;color:yellow"></i></h2>
+            <h5 class="center white-text">Peoples Trust</h5>
+
+            <p class="light white-text">कोविड-19 च्या संकटात ग्राहकांचा विश्वास टिकवून ठेवणे आणि त्यानंतर ग्राहकांची मागणी आणि वैयक्तिकरित्या खरेदी करण्यास प्राधान्य देणाऱ्या ग्राहकांना सेवा देणे हे आपल्यासमोरील मोठे आव्हान होत. आम्ही ग्राहकांच्या गरजांवर आधारित आमचे उत्पादन आणि सेवा ऑफर विचारपूर्वक विस्तारित केल्या आहेत. आगामी काळातही हा यशस्वी प्रवास सुरू ठेवण्याची अपेक्षा आहे</p>
+          </div>
+        </div>
+        <!------ SECTION 08 ICON AND INFO COLUMN 2 END --------->
+
+        <!------ SECTION 08 ICON AND INFO COLUMN 3 START --------->
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class='fas fa-shipping-fast' style='font-size:48px;color:yellow'></i></h2>
+            <h5 class="center white-text">Home Delivery</h5>
+
+            <p class="light white-text">ग्राहकांसाठी होम डिलिव्हरी अधिक सुरक्षित आणि सोयीस्कर आहे, कारण ते कधीही, कुठेही ऑर्डर देऊ शकतात. डिलिव्हरी प्लॅटफॉर्म स्मार्टफोन आणि टॅब्लेट सारख्या कोणत्याही मोबाइल डिव्हाइससाठी ऑप्टिमाइझ केले जाईल. एका बटणाच्या एका क्लिकवर किंवा स्क्रीनच्या फक्त एका टचवर, किराणा सामान त्यांच्या दारापर्यंत कोणत्याही त्रासाशिवाय वितरित केला जाईल.</p>
+          </div>
+        </div>
+        <!------ SECTION 08 ICON AND INFO COLUMN 3 END --------->
+
+      </div><!------ SECTION 08 ICON AND INFO ROW END --------->
+    </div><!------ SECTION 08 SECTION END --------->
+  </div><!------ SECTION 08 CONTAINER END --------->
+
+
+
+<!---------------------------------------------------------------------------->
+<!------------------------- SECTION 09 ABOUT ME ------------------------------>
+<!---------------------------------------------------------------------------->
+
+<div align="center" class="container col s1"> <!------ SECTION 09 CONTAINER START --------->
+
+   <div class="card"> <!------ SECTION 09 CONTAINER CARD START --------->
+
+     <!------ SECTION 09 CONTAINER CARD IMAGE  --------->
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="logo.jpg" >
+    </div>
+
+    <!------ SECTION 09 CONTAINER CARD HEADING  --------->
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><strong id="id99" >Ritesh Gorle</strong><i class="material-icons right">more_vert</i></span>
+    </div>
+
+    <!------ SECTION 09 CONTAINER CARD BACK INFO  --------->
+    <div class="card-reveal">
+      <span id="id999" class="card-title">थोडक्यात माझ्याबद्दल<i class="material-icons right grey-text text-darken-4">close</i></span> <hr>
+      <p align="left" class="info-about">माझे नाव बंटी गोरले आहे आणि मी दहा वर्षांपासून हे किराणा दुकान चालवत आहे. अलीकडेच आम्ही आमची उत्पादने ऑनलाइन विकण्यास सुरुवात केली आणि ग्राहकांचा चांगला प्रतिसाद आहे. मला वैयक्तिकरित्या असे वाटते की ग्राहकांचे समाधान हे मोजमाप म्हणून परिभाषित केले जाते जे कंपनीची उत्पादने, सेवा आणि क्षमतांसह ग्राहक किती आनंदी आहेत हे निर्धारित करते. त्याचप्रमाणे, किराणा मालाच्या अनुभवाचे पाच महत्त्वाचे घटक म्हणजे मूल्य, किंमत, उत्पादन ताजेपणा, स्टोअरची स्वच्छता आणि स्टॉकची उपलब्धता. सर्वेक्षणे आणि रेटिंगसह ग्राहकांच्या समाधानाची माहिती, कंपनीची उत्पादने आणि सेवा सर्वोत्तम कशी सुधारायची किंवा बदलायची हे निर्धारित करण्यात मदत करू शकते.</p>
+      <p align="left" class="info-about">किराणा दुकानातून आवश्यक वस्तू खरेदी करणे याला किराणा खरेदी म्हणतात. आजकाल सर्वत्र किराणा दुकाने उपलब्ध आहेत. दूध, अंडी, ब्रेड, तेल, साखर, मीठ, थंड पेये इत्यादी सर्व प्रकारच्या दैनंदिन गरजेच्या गोष्टी किराणा दुकानात मिळतात. तथापि, जर आपल्याला किराणा सामानाच्या खरेदीसाठी जायचे असेल तर आपण काही छोट्या परंतु महत्त्वाच्या गोष्टी केल्या पाहिजेत. प्रथम, आपल्याला खरेदी करण्यासाठी काय आवश्यक आहे ते शोधले पाहिजे. मग खरेदीची यादी बनवावी म्हणजे चूक होणार नाही. खरेदी करण्यासाठी आपण जवळच्या आणि विश्वासार्ह दुकानात जावे.  </p>
+      <p align="left" class="info-about">तसेच, मला वाटते की ग्राहकांचे समाधान हे उत्पादन किंवा सेवा ग्राहकांच्या अपेक्षा पूर्ण करते किंवा त्यापेक्षा जास्त असते. तसेच मला वाटते की सर्व प्लॅटफॉर्मवर सातत्यपूर्ण ग्राहक सेवा ऑफर करून ग्राहकांचे समाधान सुधारले जाऊ शकते. नवीन आरोग्य मार्गदर्शक तत्त्वांवर कर्मचाऱ्यांना वारंवार प्रशिक्षण द्या, तुमच्या ग्राहकांशी नियमितपणे बोला आणि ग्राहक अनुभव वैयक्तिकृत करा. तुमची चेकआउट प्रक्रिया अखंड करा. किरकोळ विक्री सेवांच्या क्षेत्रात अनेक संशोधन अभ्यास केले गेले आहेत, परंतु किराणा दुकानात ग्राहकांचे समाधान या दोन्ही गोष्टींचा विचार करणारे कोणतेही संशोधन झालेले नाही.</p>
+
+      <P align="left" class="info-about">आणि हो, लोकांना माझ्या कामाबद्दल सांगणे आणि माझ्या कामाचा प्रचार-प्रसार करणे मला पूर्णवेळ नोकरी म्हणून करायला आवडते.</P>
+
+
+    </div>
+
+  </div> <!------ SECTION 09 CONTAINER CARD START --------->
+</div><!------ SECTION 09 CONTAINER START --------->
+
+
+<!---------------------------------------------------------------------------->
+<!-------------------------- SECTION 10 FOOTER ------------------------------->
+<!---------------------------------------------------------------------------->
+
+  <footer class="page-footer  "> <!------ SECTION 10 PAGE FOOTER START --------->
+
+    <div class="container-fluid"> <!------ SECTION 10 FOOTER CONTAINER START --------->
+
+      <div class="row"><!------ SECTION 10 FOOTER ROW START --------->
+
+        <!------ SECTION 10 FOOTER ROW COLUMN 1 START --------->
+        <div class="col l6 s12">
+          <h5 id="id11">GORLE GROCERY STORE</h5>
+          <p id="id10">आम्ही किराणा माल, बेकरी आणि दुग्धजन्य पदार्थ, ताजे उत्पादन विकतो, मांस, सीफूड आणि दुग्धजन्य पदार्थ. पॅकेज केलेले, बाटलीबंद आणि कॅन केलेला माल विकतो. तसेच आमच्याकडे सौंदर्य उत्पादने आणि नॉनफूड वस्तू आहेत.</p>
+        </div>
+        <!------ SECTION 10 FOOTER ROW COLUMN 1 END --------->
+
+        <!------ SECTION 10 FOOTER ROW COLUMN 2 START --------->
+        <div class="col l3 s12">
+          <h5 id="id11">PAGES</h5>
+          <ul>
+            <li><a id="id9"  href="index.html">Home</a></li>
+            <li><a id="id9" href="grocery.html">Grocery</a></li>
+            <li><a id="id9" href="about.html">About</a></li>
+            <li><a id="id9" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!------ SECTION 10 FOOTER ROW COLUMN 2 END --------->
+
+        <!------ SECTION 10 FOOTER ROW COLUMN 3 START --------->
+        <div class="col l3 s12">
+          <h5 id="id11">FOLLOW US</h5>
+          <ul>
+            <li><a id="id9" href="contact.html"><i class="fa fa-facebook-square" style="font-size:24px"></i> Facebook</a></li>
+            <li><a id="id9" href="contact.html"><i class="fa fa-twitter-square" style="font-size:24px"></i> Twitter</a></li>
+            <li><a id="id9" href="contact.html"><i class='fab fa-whatsapp-square' style='font-size:24px'></i> WhatsApp</a></li>
+            <li><a id="id9" href="contact.html"><i class="fa fa-linkedin-square" style="font-size:24px"></i> Linkedin</a></li>
+          </ul>
+        </div>
+        <!------ SECTION 10 FOOTER ROW COLUMN 3 END --------->
+
+      </div><!------ SECTION 10 FOOTER ROW END --------->
+    </div><!------ SECTION 10 FOOTER CONTAINER END --------->
+
+
+    <div class="footer-copyright"> <!------ SECTION 09 FOOTER COPYRIGHT START --------->
+      <div class="container black-text">
+      Copyright © 2022 All Rights Reserved by <a class="white-text text-lighten-3" href="about.html">Gorle Grocery Store.</a>
+      </div>
+    </div> <!------ SECTION 10 FOOTER COPYRIGHT END --------->
+
+  </footer><!------ SECTION 10 PAGE FOOTER END --------->
+
+
+<!---------------------------------------------------------------------------->
+<!------------------------------ JAVASCRIPT ---------------------------------->
+<!---------------------------------------------------------------------------->
+  
+  <script src="materialize.js"></script>
+  <script src="init.js"></script>
+
+</body>
+</html>

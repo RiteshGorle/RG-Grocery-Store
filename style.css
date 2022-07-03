@@ -1,0 +1,427 @@
+/* WebSite Name: Gorle Grocery Store
+   Made by: Ritesh Gorle
+   Created: JULY 2022
+   Content: Grocery Prodcuts
+*/
+
+
+/*********************************************************
+   __  __       _            _       _   _
+  |  \/  |     | |          (_)     | | (_)                
+  | \  / | __ _| |_ ___ _ __ _  __ _| |  _ _______
+  | |\/| |/ _` | __/ _ \ '__| |/ _` | | | |_  / _ \        
+  | |  | | (_| | ||  __/ |  | | (_| | | | |/ /  __/
+  \_|  |_/\__,_|\__\___|_|  |_|\__,_|_| |_/___\___|    
+
+***********************************************************/
+
+
+/*****************************************
+Table Of Contents:
+
+01. BASIC CSS Style
+02. PRELOADER
+03. SECTION 01 NAVIGATION BAR
+04. SECTION 02 SHOP NOW BUTTON
+05. SECTION 03 TOOLTIPPED
+06. SECTION 05 & 06 : FOOD SECTION
+07. SECTION 06 FOOD SECTION 03
+08. SECTION 08 ICON AND INFO SECTION
+09. SECTION 09 ABOUT ME
+10. SECTION 10 FOOTER
+
+CONTACT FORM  PAGE
+
+******************************************/
+
+
+/******************************/
+/*   01. BASIC CSS Style      */
+/******************************/   
+body{
+  background-color:#263238  ;
+}
+
+h1, h3{
+  color: yellow ;
+}
+
+
+/******************************/
+/*     02. PRELOADER          */
+/******************************/
+
+/* Preloader */
+.container-preloader {
+  align-items:center; cursor:none; display:flex; height:100%;
+  justify-content:center; position:fixed; left:0; top:0; width:100%; z-index:900;
+}
+.container-preloader .animation-preloader {
+  position:absolute; z-index: 100;}
+/* Spinner Loading */
+.container-preloader .animation-preloader .spinner {
+  animation: spinner 1s infinite linear;
+  border-radius: 50%;  border: 10px solid rgba(0, 0, 0, 0.2);
+  border-top-color: green; /* It is not in alphabetical order so that you do not overwrite it */
+  height: 9em;  margin: 0 auto 3.5em auto; width: 9em;
+}
+/* Loading text */
+.container-preloader .animation-preloader .txt-loading {
+  font: bold 5em cursive;
+  text-align: center; user-select: none;
+}
+.container-preloader .animation-preloader .txt-loading .characters:before {
+  animation: characters 1s infinite;  color: red;
+  content: attr(preloader-text);  left: 0;
+  opacity: 0;  position: absolute;  top: 0;
+  transform: rotateY(-90deg);
+}
+.container-preloader .animation-preloader .txt-loading .characters {
+  color: rgba(0, 0, 0, 0.2);  position: relative;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(2):before {
+  animation-delay: 0.2s;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(3):before {
+  animation-delay: 0.4s;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(4):before {
+  animation-delay: 0.6s;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(5):before {
+  animation-delay: 0.8s;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(6):before {
+  animation-delay: 1s;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(7):before {
+  animation-delay: 1.2s;
+}
+.container-preloader .loader-section {
+  background-color: black;  height: 100%;
+  position: fixed;  top: 0;  width: calc(50% + 1px);
+}
+.container-preloader .loader-section.section-left {
+  left: 0;
+}
+.container-preloader .loader-section.section-right {
+  right: 0;
+}
+/* Fade effect on loading animation */
+.loaded .animation-preloader {
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+/* Curtain effect */
+.loaded .loader-section.section-left {
+  transform: translateX(-101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
+}
+.loaded .loader-section.section-right {
+  transform: translateX(101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
+}
+/* Animation of the preloader */
+@keyframes spinner {
+to {
+  transform: rotateZ(360deg);
+}}
+/* Animation of letters loading from the preloader */
+@keyframes characters {
+  0%,
+  75%,
+  100% {
+ opacity: 0;
+ transform: rotateY(-90deg);
+  }
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }}
+
+
+/* Laptop size back (laptop, tablet, cell phone) */
+@media screen and (max-width: 767px) {
+  /* Preloader */
+  /* Spinner Loading */ 
+  .container-preloader .animation-preloader .spinner {
+  height: 8em;
+  width: 8em;
+  }
+  /* Text Loading */
+  .container-preloader .animation-preloader .txt-loading {
+    font: bold 3.5em cursive;
+  }}
+@media screen and (max-width: 500px) {
+  /* Prelaoder */
+  /* Spinner Loading */
+  .container-preloader .animation-preloader .spinner {
+  height: 7em;
+  width: 7em;
+  }
+  /*Loading text */
+  .container-preloader .animation-preloader .txt-loading {
+    font: bold 2em cursive;
+  }}
+.origin{text-decoration:none;
+font-size:45px;}
+
+
+
+.preloader img {
+  width: 250px; height: 250px;
+  background-size: contain;
+  margin-top: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg) }
+}
+
+
+
+/************************************/
+/*  03. SECTION 01 NAVIGATION BAR   */
+/************************************/   
+.green{
+  height: 70px;
+  box-shadow: 1px 5px 15px 3px #888888;
+}
+
+
+#logo-container{
+  margin-top: 5px;
+}
+
+.navi{ 
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+}
+
+
+#id-mob{
+  font-size: 20px;
+  font-weight: 900;
+  color: red;
+}
+
+#id-mob:hover{
+ background-color: #69f0ae;
+ color: black;
+  
+}
+
+
+/************************************/
+/*  04. SECTION 02 SHOP NOW BUTTON  */
+/************************************/
+#download-button:visited,
+#download-button:link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: black;
+  transition: all 0.5s linear;
+  border: 0.2rem solid #ec1840;
+  box-shadow:0 0 5px 1px #ec1840,
+    0 0 10px 1px #ec1840;
+}
+
+
+#download-button:hover,
+#download-button:active{
+  background: #69f0ae;
+  color: black;
+  transition-delay: 0.1s;
+  background-size: 18rem;
+  animation: animate .1s steps(2) forwards;
+}
+
+@keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -48rem;
+  }
+}
+
+
+/******************************/
+/*  05. SECTION 03 TOOLTIPPED */
+/******************************/   
+.material-tooltip
+    {
+    background-color: white;
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+    }
+
+.tooltip-content 
+   {
+    padding: 3px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #000;
+    max-width: 350px;
+   }
+
+
+
+/*************************************/
+/* 06. SECTION 05 & 06 : FOOD SECTION */
+/************************************/   
+
+.collection-item{
+  font-weight: 900;
+  font-size: 16px;
+  color: black;
+}
+
+
+.collection-item:hover {
+  color: red;
+}
+
+
+.collection-head{
+  font-weight: 900;
+  color: red;
+  
+
+}
+
+
+/*************************************/
+/*  07. SECTION 06 FOOD SECTION 03   */
+/************************************/   
+.my{
+  background-color: white;
+}
+
+
+/*******************************************/
+/*  08. SECTION 08 ICON AND INFO SECTION  */
+/******************************************/   
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+
+/*******************************************/
+/*  09. SECTION 09 ABOUT ME               */
+/******************************************/   
+
+/* Outside Heading  */
+#id99{
+  font-size: 30px;
+  font-weight: 900;
+}
+
+/* Inside Heading  */
+
+#id999{
+  font-size: 50px;
+  font-weight: 900;
+  color: red;
+}
+
+/* Inside Info  */
+.info-about{
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+
+
+/******************************/
+/*  10. SECTION 10 FOOTER     */
+/******************************/   
+
+/* Anchor Tags*/
+#id9 {
+  color: red;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#id9:hover {
+  color: white;
+}
+
+
+/* Paragraph */
+#id10 {
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+
+#id10:hover {
+  color: black;
+}
+
+
+
+/* Heading */
+#id11 {
+  color: black;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+
+#id11:hover {
+  color: white;
+}
+
+
+/* background color */
+.page-footer{
+  background-color: #69f0ae;
+}
+
+
+/******************************/
+/*  CONTACT FORM  PAGE         */
+/******************************/  
+
+/* label color */
+   .input-field label {
+     color: red;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }

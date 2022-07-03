@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Gorle Grocery Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+
+<!----------------------------------------------------------
+   __  __       _            _       _   _
+  |  \/  |     | |          (_)     | | (_)                -
+  | \  / | __ _| |_ ___ _ __ _  __ _| |  _ _______
+  | |\/| |/ _` | __/ _ \ '__| |/ _` | | | |_  / _ \        -
+  | |  | | (_| | ||  __/ |  | | (_| | | | |/ /  __/
+  \_|  |_/\__,_|\__\___|_|  |_|\__,_|_| |_/___\___|        -
+                                                                                
+----------------------------------------------------------->
+
+
+<!--------------------------------------------------->
+<!--------------------- FAVICON IMAGE --------------->
+<!--------------------------------------------------->
+<link rel="icon" type="image/x-icon" href="logo1.png">
+
+
+<!--------------------------------------------------->
+<!---------- Compiled and minified CSS -------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+<!--------------------------------------------------->
+<!------- Compiled and minified JavaScript ---------->
+<!--------------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<!--------------------------------------------------->
+<!------ Import jQuery before materialize.js -------->
+<!--------------------------------------------------->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+
+<!--------------------------------------------------->
+<!--------------- Font Awesome style ---------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--------------------------------------------------->
+<!--------------- Font Awesome Kit ------------------>
+<!--------------------------------------------------->
+<script src="https://kit.fontawesome.com/92c23805dd.js" crossorigin="anonymous"></script>
+
+
+<!--------------------------------------------------->
+<!-------------------- CSS -------------------------->
+<!--------------------------------------------------->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+
+<body>
+
+  <!------------------------ SECTION 01: PRELOADER START ------------------------------------------>
+
+    <div id="preloader"> <!-------- PRELOADER ID START ------->
+
+      <div id="container" class="container-preloader"> <!-------- PRELOADER CONTAINER START ------->
+
+        <div class="animation-preloader"> <!-------- PRELOADER ANIMATION START ------->
+         
+          <div class="txt-loading"> <!-------- PRELOADER TEXT START ------->
+
+            <span preloader-text="G" class="characters">G</span>
+            
+            <span preloader-text="O" class="characters">O</span>
+            
+            <span preloader-text="R" class="characters">R</span>
+            
+            <span preloader-text="L" class="characters">L</span>
+            
+            <span preloader-text="E" class="characters">E</span>
+            
+           
+            <div class="preloader"> <!-------- PRELOADER IMAGE START ------->
+                <img src="spin.gif" border="0">
+            </div><!-------- PRELOADER IMAGE END ------->
+
+
+          </div><!-------- PRELOADER TEXT END ------->
+        </div> <!-------- PRELOADER ANIMATION END ------->
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+      </div><!-------- PRELOADER CONTAINER END ------->
+    </div><!-------- PRELOADER ID END ------->
+
+<!------------------------ SECTION 01: PRELOADER END ------------------------------------------>
+
+
+
+<!---------------------------------------------------------------------------->
+<!------------------------ SECTION 01 NAVIGATION BAR  ------------------------>
+<!---------------------------------------------------------------------------->
+
+<header><!------------------------ SECTION 01 HEADER START  ------------------------>
+
+  <div class="navbar-fixed"> <!---------- SECTION 01 FIXED NAVBAR START  -------------->
+  
+    <nav class="green accent-2 lighten-1" role="navigation"> <!---- SECTION 01 NAV START------->
+
+      <div class="nav-wrapper container"> <!---- SECTION 01 CONTAINER START------->
+       
+       <!---------- SECTION 01 LOGO  -------------->
+      <a id="logo-container" href="index.html" class="brand-logo"><img src="logo1.png" width="60px" alt=""></a>
+        
+        <!------ SECTION 01 MOBILE SIDENAV ICON  ---->
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger "><i class="fa fa-cog fa-spin" style="font-size:24px"></i> </a>
+    
+
+        <!------ SECTION 01 DESKTOP NAVIGATION START  ---->
+      <ul class="right hide-on-med-and-down">
+        <li ><a class="navi" href="index.html">HOME </a></li>
+        <li ><a class="navi" href="grocery.html">GROCERY</a></li>
+
+         <!-- Dropdown Trigger -->
+      <li><a class="navi dropdown-trigger"  href="#" data-target="dropdown1">PRODUCTS<i class="material-icons right">arrow_drop_down</i></a></li>
+
+
+        <li><a href="about.html" class="navi">ABOUT</a></li>
+        <li><a href="contact.html" class="navi">CONTACT</a></li>
+      
+      </ul>
+
+      <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a class="navi" href="product.html">Frozen Food</a></li>
+  <li><a class="navi" href="product.html">Sea Food</a></li>
+  <li><a class="navi" href="product.html">Fruits</a></li>
+  <li><a class="navi" href="product.html">Meat</a></li>
+  <li><a class="navi" href="product.html">Drinks</a></li>
+</ul>
+
+<!------ SECTION 01 DESKTOP NAVIGATION END  ---->
+
+    </div><!---- SECTION 01 CONTAINER END ------->
+  </nav><!---- SECTION 01 NAV END  ------->
+</div><!----- SECTION 01 FIXED NAVBAR END ----->
+
+
+
+<!------ SECTION 01 MOBILE NAVIGATION START  ---->
+      <ul id="nav-mobile" class="sidenav">
+        <li><a id="id-mob" href="index.html" >HOME</a></li>
+        <li class="divider"></li>
+        <li><a id="id-mob"href="grocery.html" >GROCERY</a></li>
+        <li class="divider"></li>
+        <li><a id="id-mob" href="product.html" >PRODUCTS</a></li>
+        <li class="divider"></li>
+        <li><a id="id-mob" href="about.html" >ABOUT</a></li>
+        <li class="divider"></li>
+        <li><a id="id-mob" href="contact.html" >CONTACT</a></li>
+        <li class="divider"></li>
+      </ul>
+<!------ SECTION 01 MOBILE NAVIGATION START  ---->
+
+</header><!------------------------ SECTION 01 HEADER END  ------------------------>
+  
+
+<!---------------------------------------------------------------------------->
+<!-------------------- SECTION 02 HEADING SECTION ---------------------------->
+<!---------------------------------------------------------------------------->
+
+  <div class="section no-pad-bot" id="index-banner"> <!------ SECTION 02 BANNER START --------->
+
+    <div class="container"> <!------ SECTION 02 CONTAINER START --------->
+      <br><br>
+
+      <!------ SECTION 02 HEADING --------->
+      <h1 class="header center hoverable"><strong>Gorle Grocery Store</strong></h1>
+
+      <!------ SECTION 02 TAGLINE START --------->
+      <div class="row center">
+      <h6 class="header col s12 light white-text"><strong>We're here to serve only the best products for you.</strong></h6>
+      </div>
+      <!------ SECTION 02 TAGLINE END --------->
+
+      <!------ SECTION 02 SHOP NOW BUTTON START --------->
+      <div class="row center">
+        <a href="grocery.html" id="download-button" class="btn-large  "><strong>Shop now</strong> <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+      </div>
+       <!------ SECTION 02 SHOP NOW BUTTON END --------->
+      <br><br>
+
+    </div><!------ SECTION 02 CONTAINER END --------->
+  </div> <!------ SECTION 02 BANNER END --------->
+
+
+
+<!---------------------------------------------------------------------------->
+<!-------------------- SECTION 03 CONTACT FORM SECTION ----------------------->
+<!---------------------------------------------------------------------------->
+
+<div class="container row  teal accent-2" style="padding-bottom: 25px;" >
+    <form class="col s12" autocomplete="off">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i><input id="first_name" type="text" class="validate">
+          <label for="first_name" style="font-size: 18px; font-weight: bold;">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name" style="font-size: 18px; font-weight: bold;">Last Name</label>
+        </div>
+      </div>
+
+      <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>for Contact</option>
+      <option value="1">To Buy Grocery</option>
+      <option value="2">To Meet Bunty Gorle</option>
+      <option value="3">To Sell your Grocery Products Online</option>
+    </select>
+    <label style="font-size: 18px; font-weight: bold;">Reason:</label>
+  </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+           <i class="material-icons prefix">phone</i><input id="password" type="password" class="validate">
+          <label for="password" style="font-size: 18px; font-weight: bold;">Telephone</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mode_edit</i><input id="email" type="email" class="validate">
+          <label for="email" style="font-size: 18px; font-weight: bold;">Message</label>
+        </div>
+      </div>
+
+
+  <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+      
+    </form>
+  </div>
+<br>
+
+
+<!---------------------------------------------------------------------------->
+<!-------------------------- SECTION 04 FOOTER ------------------------------->
+<!---------------------------------------------------------------------------->
+
+  <footer class="page-footer  "> <!------ SECTION 04 PAGE FOOTER START --------->
+
+    <div class="container-fluid"> <!------ SECTION 04 FOOTER CONTAINER START --------->
+
+      <div class="row"><!------ SECTION 04 FOOTER ROW START --------->
+
+        <!------ SECTION 04 FOOTER ROW COLUMN 1 START --------->
+        <div class="col l6 s12">
+          <h5 id="id11">GORLE GROCERY STORE</h5>
+          <p id="id10">आम्ही किराणा माल, बेकरी आणि दुग्धजन्य पदार्थ, ताजे उत्पादन विकतो, मांस, सीफूड आणि दुग्धजन्य पदार्थ. पॅकेज केलेले, बाटलीबंद आणि कॅन केलेला माल विकतो. तसेच आमच्याकडे सौंदर्य उत्पादने आणि नॉनफूड वस्तू आहेत.</p>
+        </div>
+        <!------ SECTION 04 FOOTER ROW COLUMN 1 END --------->
+
+        <!------ SECTION 04 FOOTER ROW COLUMN 2 START --------->
+        <div class="col l3 s12">
+          <h5 id="id11">PAGES</h5>
+          <ul>
+            <li><a id="id9"  href="index.html">Home</a></li>
+            <li><a id="id9" href="grocery.html">Grocery</a></li>
+            <li><a id="id9" href="about.html">About</a></li>
+            <li><a id="id9" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!------ SECTION 04 FOOTER ROW COLUMN 2 END --------->
+
+        <!------ SECTION 04 FOOTER ROW COLUMN 3 START --------->
+        <div class="col l3 s12">
+          <h5 id="id11">FOLLOW US</h5>
+          <ul>
+            <li><a id="id9" href="contact.html"><i class="fa fa-facebook-square" style="font-size:24px"></i> Facebook</a></li>
+            <li><a id="id9" href="contact.html"><i class="fa fa-twitter-square" style="font-size:24px"></i> Twitter</a></li>
+            <li><a id="id9" href="contact.html"><i class='fab fa-whatsapp-square' style='font-size:24px'></i> WhatsApp</a></li>
+            <li><a id="id9" href="contact.html"><i class="fa fa-linkedin-square" style="font-size:24px"></i> Linkedin</a></li>
+          </ul>
+        </div>
+        <!------ SECTION 04 FOOTER ROW COLUMN 3 END --------->
+
+      </div><!------ SECTION 04 FOOTER ROW END --------->
+    </div><!------ SECTION 04 FOOTER CONTAINER END --------->
+
+
+    <div class="footer-copyright"> <!------ SECTION 09 FOOTER COPYRIGHT START --------->
+      <div class="container black-text">
+      Copyright © 2022 All Rights Reserved by <a class="white-text text-lighten-3" href="about.html">Gorle Grocery Store.</a>
+      </div>
+    </div> <!------ SECTION 04 FOOTER COPYRIGHT END --------->
+
+  </footer><!------ SECTION 04 PAGE FOOTER END --------->
+
+
+<!---------------------------------------------------------------------------->
+<!------------------------------ JAVASCRIPT ---------------------------------->
+<!---------------------------------------------------------------------------->
+  
+  <script src="materialize.js"></script>
+  <script src="init.js"></script>
+
+</body>
+</html>
